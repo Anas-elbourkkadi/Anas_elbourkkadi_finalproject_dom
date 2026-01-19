@@ -10,39 +10,41 @@
 
 <body>
     <header>
-    <nav class="d-flex px-15 align-items-center py-5  justify-content-between  shadow-lg ">
-        <h1 class="title text-colorTextPrimer fs-2 font-second  ">Yummy<span class="text-colorBtns">.</span></h1>
-        <ul class="d-lg-flex d-none gap-8  align-items-center mb-0 list-unstyled  ">
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">menu</a></li>
-            <li><a href="#">events</a></li>
-            <li><a href="#">chefs</a></li>
-            <li><a href="#">gallery</a></li>
-            <li><a href="#">dropdown</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-        <div class="d-flex align-items-center">
-            <a href="#" class="btn btn-colorBtns rounded-pill  px-3">book a table</a>
-            <i class="ms-1 bi bi-list fs-2 d-lg-none"></i>
-        </div>
-    </nav>
+        <nav class="d-flex px-15 align-items-center py-5  justify-content-between  shadow-lg ">
+            <h1 class="text-colorTextPrimer fs-3 font-second  ">Yummy<span class="text-colorBtns">.</span></h1>
+            <ul class="d-lg-flex d-none gap-8  align-items-center mb-0 list-unstyled  ">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#events">events</a></li>
+                <li><a href="#chefs">chefs</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#dropdown">dropdown</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <a href="#" class="btn btn-colorBtns rounded-pill  px-3">book a table</a>
+                <i class="ms-1 bi bi-list fs-2 d-lg-none"></i>
+            </div>
+        </nav>
 
-    
+
         <div class="bg-sconderyBgcolor py-11">
             <div class="container">
                 <div class="row justify-content-center justify-content-lg-between gy-4  ">
-                    <section id="home" class="col-lg-5  order-lg-first order-last d-flex  flex-column justify-content-center  ">
+                    <section id="home"
+                        class="col-lg-5  order-lg-first order-last d-flex  flex-column justify-content-center  ">
                         <h2 class="font-first  fw-bold ">Enjoy Your Healthy
-                            <br>Delicious Food</h2>
+                            <br>Delicious Food
+                        </h2>
                         <p class="fs-5 text-colorTextScondery  ">We are team of talented designers making websites with
                             Bootstrap
                         </p>
                         <div>
                             <a href="#" class="btn btn-colorBtns rounded-pill  px-6 py-2 ">book a table</a>
-                            <a href="#" class="btn bHearder  rounded-pill d-inline-flex align-items-center gap-2">
+                            <a href="#" class="btn  rounded-pill d-inline-flex align-items-center gap-2">
                                 <i class="bi bi-play-circle fs-2  text-colorBtns"></i>
-                                <span class="fw-bold"> Watch
+                                <span class="fw-bold bHearder"> Watch
                                     Video</span>
                             </a>
 
@@ -58,6 +60,47 @@
 
 
     </header>
+    <main class="container">
+        <section id="about" class="d-flex flex-column align-items-center mt-15 mb-15 text-capitalize">
+            <p class="text-colorTextScondery text-uppercase">about us</p>
+            <h3 class="font-first">Learn More <span class="text-colorBtns">about Us</span></h3>
+        </section>
+        <div class="row">
+            <div class="col-lg-7 d-flex flex-column gap-5 mb-5 mb-lg-0">
+                <img src="public/images/Yummy/about.jpg" class="w-100" alt="image2" loading="lazy">
+                <div class="fs-4 d-flex flex-column align-items-center  border border-colorTextPrimery border-5 py-3">
+                    <p class="text-colorTextPrimery  fw-bold m-0">Book a Table</p>
+                    <p class="text-colorBtns  fs-3 fw-bolder m-0">+1 5589 55488 55</p>
+                </div>
+            </div>
+            <div class="col-lg-5 ps-2 ps-lg-10">
+                <p class="text-colorTextScondery">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+
+                <ul class="list-unstyled  list1">
+                    <li>
+                        <i class="bi bi-check-circle-fill text-colorBtns"></i>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                    <li>
+                        <i class="bi bi-check-circle-fill text-colorBtns"></i>
+                        Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </li>
+                    <li>
+                        <i class="bi bi-check-circle-fill text-colorBtns"></i>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                    </li>
+                </ul>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident </p>
+                
+            </div>
+
+        </div>
+
+    </main>
     <script src="./Public/Js/app.js"></script>
 
 </body>

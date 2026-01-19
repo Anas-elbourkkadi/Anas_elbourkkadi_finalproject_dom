@@ -30237,4 +30237,32 @@ nav div a {
   color: #ce1212;
 }
 
+img[alt=image1] {
+  animation: dash1 3s ease-in-out infinite;
+}
+
+@keyframes dash1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#about h3, #about .h3 {
+  font-size: 64px;
+}
+#about p {
+  font-size: 13px;
+}
+
+.list1 li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 3vh;
+}
+
 /*# sourceMappingURL=app.css.map */

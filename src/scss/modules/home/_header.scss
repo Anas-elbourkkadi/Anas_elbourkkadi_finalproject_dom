@@ -1,8 +1,28 @@
-#home{
-    h2{
-        font-size: 64px;  
+#home {
+    h2 {
+        font-size: 64px;
     }
-    .bHearder:hover{
+
+    .bHearder:hover {
         color: $colorBtns;
+    }
+}
+
+img[alt="image1"] {
+
+    animation: dash1 3s ease-in-out infinite;
+}
+
+@keyframes dash1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
