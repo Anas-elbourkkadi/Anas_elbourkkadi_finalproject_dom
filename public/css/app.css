@@ -30216,7 +30216,7 @@ textarea.form-control-lg {
   }
 }
 * {
-  margin: 0 !important;
+  margin: 0;
   padding: 0;
 }
 
@@ -30228,6 +30228,13 @@ nav a {
 
 nav div a {
   font-size: 13px !important;
+}
+
+#home h2, #home .h2 {
+  font-size: 64px;
+}
+#home .bHearder:hover {
+  color: #ce1212;
 }
 
 /*# sourceMappingURL=app.css.map */
