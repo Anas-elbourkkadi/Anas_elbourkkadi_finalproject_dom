@@ -1,0 +1,58 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$spacer: 5px;
+
+@for $i from 1 through 50 {
+    $spacers: map-merge($map1: $spacers, $map2: (
+            $i : $spacer * $i)
+    );
+}
+
+$primeryBgcolor: #ffffff;
+$sconderyBgcolor: #f2f2f2;
+$colorTextPrimery: #37373f;
+$colorTextScondery: #7f7f90;
+$colorBtns: #ce1212;
+
+
+$custom-colors: (
+    'primeryBgcolor': $primeryBgcolor,
+    'sconderyBgcolor': $sconderyBgcolor,
+    'colorTextPrimery': $colorTextPrimery,
+    'colorTextScondery':$colorTextScondery,
+    'colorBtns':$colorBtns,
+);
+
+$theme-colors: map-merge($map1: $custom-colors, $map2: $theme-colors );
+
+
+@font-face {
+    font-family: "AmaticSc";
+    src: url("../../public/Fonts/Amatic_SC/AmaticSC-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../public/Fonts/Roboto/static/Roboto-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$first-font: "AmaticSc";
+$second-font: "Roboto";
+
+// $font-family-base: $first-font, $second-font, sans-serif;
+
+
+.font-first {
+  font-family: $first-font, sans-serif;
+}
+
+
+.font-second {
+  font-family: $second-font, sans-serif;
+}
+
