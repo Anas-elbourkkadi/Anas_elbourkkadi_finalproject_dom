@@ -10,7 +10,8 @@
 
 <body>
     <header>
-        <nav class="d-flex px-15 align-items-center py-5  justify-content-between  shadow-lg ">
+        <nav
+            class="d-flex px-15 align-items-center py-5  justify-content-between  shadow-sm fixed-top z-2 bg-primeryBgcolor">
             <h1 class="text-colorTextPrimer fs-3 font-second  ">Yummy<span class="text-colorBtns">.</span></h1>
             <ul class="d-lg-flex d-none gap-8  align-items-center mb-0 list-unstyled  ">
                 <li><a href="#home">home</a></li>
@@ -23,13 +24,13 @@
                 <li><a href="#contact">contact</a></li>
             </ul>
             <div class="d-flex align-items-center">
-                <a href="#" class="btn btn-colorBtns rounded-pill  px-3">book a table</a>
+                <a href="#contact" class="btn btn-colorBtns rounded-pill  px-3">book a table</a>
                 <i class="ms-1 bi bi-list fs-2 d-lg-none"></i>
             </div>
         </nav>
 
 
-        <div class="bg-sconderyBgcolor py-11">
+        <div class="bg-sconderyBgcolor pb-15 pt-25">
             <div class="container">
                 <div class="row justify-content-center justify-content-lg-between gy-4  ">
                     <section id="home"
@@ -74,7 +75,8 @@
                 </div>
             </div>
             <div class="col-lg-5 ps-2 ps-lg-10">
-                <p class="text-colorTextScondery">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p class="text-colorTextScondery">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. </p>
 
                 <ul class="list-unstyled  list1">
@@ -95,13 +97,73 @@
                 <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident </p>
-                
+
+
+                <div class="position-relative mb-15 wave-btn">
+                    <img class="w-100" src="./public/images/Yummy/about-2.jpg" alt="image2" loading="lazy">
+                    <div class="icon1">
+                        <i class="bi btnStart bi-play-fill text-primeryBgcolor"></i>
+                        <span class="wave"></span>
+                        <span class="wave"></span>
+                    </div>
+                </div>
             </div>
+            
+
+            <!-- Overlay -->
+            <div class="carousel-overlay d-none">
+
+                <!-- Close -->
+                <div class="close-btn">
+                    <i class="bi bi-x fs-1 text-primeryBgcolor"></i>
+                </div>
+
+                <!-- Slider -->
+                <div class="carousel">
+                    <div class="track">
+
+                        <div class="slide active">
+                            <video autoplay muted>
+                                <source src="./public/videos/BootstrapMade Template Builder Overview - BootstrapMade (480p, h264, youtube).mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="slide">
+                            <img src="./public/images/Yummy/menu/menu-item-1.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./public/images/Yummy/menu/menu-item-2.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./public/images/Yummy/menu/menu-item-3.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./public/images/Yummy/menu/menu-item-4.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./public/images/Yummy/menu/menu-item-5.png" />
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <button class="nav prev"><i class="bi bi-chevron-left"></i></button>
+                <button class="nav next"><i class="bi bi-chevron-right"></i></button>
+
+            </div>
+
+
+
 
         </div>
 
     </main>
-    <script src="./Public/Js/app.js"></script>
+    <script src="./public/Js/app.js"></script>
 
 </body>
 
