@@ -1,0 +1,27 @@
+.btnCards {
+    background-color: #d53535 !important;
+
+}
+
+.iconCards {
+    background-color: #fdf3f3;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: $colorBtns;
+        cursor: pointer;
+
+        i {
+            color: #ffffff !important;
+
+        }
+    }
+}
+
+
+.textCard {
+    width: 80%;
+}
