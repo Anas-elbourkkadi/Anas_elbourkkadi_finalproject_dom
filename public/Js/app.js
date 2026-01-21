@@ -36,3 +36,43 @@ prev.addEventListener('click', () => {
   if (index < 0) index = slides.length - 1;
   updateSlide();
 });
+
+const navMenu = document.querySelectorAll('.navMenu p');
+const nameTheMenu = document.querySelector('.nameTheMenu');
+const listMenu = document.querySelectorAll('.listMenu section');
+let list = document.querySelector('.listMenu');
+
+
+
+let clearMenu = () => {
+  let start = Math.floor((listMenu.length * Math.random()) / 2);
+  for (start; start < listMenu.length; start++) {
+    list.innerHTML += listMenu[start].outerHTML
+  }
+
+}
+
+let chnageName = (e) => {
+  nameTheMenu.textContent = e.textContent;
+}
+
+
+navMenu.forEach((e) => {
+  e.addEventListener('click', () => {
+    chnageName(e);
+
+    list.innerHTML = '';
+    if (e.textContent.toLowerCase() == 'starters') {
+      listMenu.forEach((e) => {
+        list.innerHTML += e.outerHTML;
+      })
+    }
+    else if (e.textContent.toLowerCase() == 'breakfast'
+      || e.textContent.toLowerCase() == 'dinner'
+      || e.textContent.toLowerCase() == 'lunch') clearMenu();
+
+  })
+})
+
+
+

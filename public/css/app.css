@@ -30458,4 +30458,13 @@ img[alt=image1] {
   width: 80%;
 }
 
+.titleMenu h2, .titleMenu .h2 {
+  font-size: 64px;
+}
+
+.navMenu, p:hover {
+  border-bottom-color: #ce1212 !important;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=app.css.map */
