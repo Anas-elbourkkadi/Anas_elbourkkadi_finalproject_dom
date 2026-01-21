@@ -30437,6 +30437,23 @@ img[alt=image1] {
   color: #ffffff !important;
 }
 
+.state {
+  background-image: url("../../../../public/images/Yummy/stats-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.state::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.638);
+}
+
 .textCard {
   width: 80%;
 }
