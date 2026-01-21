@@ -56,10 +56,19 @@ let chnageName = (e) => {
   nameTheMenu.textContent = e.textContent;
 }
 
+let check = (elemnet) => {
+  if (!elemnet.classList.contains('border-colorBtns')) {
+    elemnet.classList.add('border-colorBtns');
+    navMenu.forEach((e) => {
+      if (e != elemnet && e.classList.contains('border-colorBtns')) e.classList.remove('border-colorBtns');
+    })
+  }
+};
 
 navMenu.forEach((e) => {
   e.addEventListener('click', () => {
     chnageName(e);
+    check(e);
 
     list.innerHTML = '';
     if (e.textContent.toLowerCase() == 'starters') {
