@@ -30467,4 +30467,17 @@ img[alt=image1] {
   cursor: pointer;
 }
 
+.wave {
+  position: absolute;
+  top: 80%;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  filter: invert(1);
+}
+
+.text-Card {
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=app.css.map */
