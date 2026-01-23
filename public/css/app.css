@@ -30252,10 +30252,10 @@ img[alt=image1] {
     transform: translateY(0);
   }
 }
-#about h3, #about .h3, .sectionTable h3, .sectionTable .h3 {
+#about h3, #about .h3, .sectionTable h3, .sectionTable .h3, .sectionContact h3, .sectionContact .h3 {
   font-size: 64px;
 }
-#about p, .sectionTable p {
+#about p, .sectionTable p, .sectionContact p {
   font-size: 13px;
 }
 
@@ -30467,7 +30467,7 @@ img[alt=image1] {
   cursor: pointer;
 }
 
-.wave {
+.wave1 {
   position: absolute;
   top: 80%;
   right: 0px;
@@ -30521,6 +30521,15 @@ img[alt=image1] {
   .hsm {
     height: 40vh !important;
   }
+}
+iframe {
+  height: 60vh;
+}
+
+.iconContact {
+  padding-inline: 1vw;
+  padding-block: 1vh;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=app.css.map */
