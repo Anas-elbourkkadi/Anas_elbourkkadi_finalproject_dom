@@ -9,21 +9,23 @@
 }
 
 #table input,
-#contact input {
+#contact input,
+#contact textarea {
     padding-block: 10px !important;
-    border-radius: 0  !important;
+    border-radius: 0 !important;
 }
 
 #table input::placeholder,
 #table textarea::placeholder,
 #contact input::placeholder,
 #contact textarea::placeholder {
-    text-transform: capitalize  ;
+    text-transform: capitalize;
     color: #bbbcbd !important;
 
 }
 
-#table textarea,#contact textarea {
+#table textarea,
+#contact textarea {
     height: 150px;
 }
 

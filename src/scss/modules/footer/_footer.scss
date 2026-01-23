@@ -1,0 +1,14 @@
+.iconFooter i {
+    box-sizing: border-box !important;
+    padding-block: 5px;
+    padding-inline: 0.5rem;
+
+    &:hover {
+        border-color: $colorBtns !important;
+        color: $colorBtns !important;
+    }
+}
+
+footer p:last-child{
+    font-size: 13px;
+}
